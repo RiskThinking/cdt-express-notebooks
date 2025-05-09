@@ -36,3 +36,10 @@ Compare a company against a market index to benchmark its exposure to climate ri
 [![Open in SageMaker](https://img.shields.io/badge/Open%20in-SageMaker-orange)](https://studiolab.sagemaker.aws/import/github/RiskThinking/cdt-express-notebooks/blob/main/5.insurability.ipynb)
 
 Visualize the change in uninsurable and stranded assets for a company over time due to changes in climate risk exposure. Retrieve and display the most at-risk assets that are uninsurable or stranded.
+
+## 6. **Company Asset Type Materiality vs. Risk** 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github.com/RiskThinking/cdt-express-notebooks/blob/main/6.company-asset-materiality-risk.ipynb)
+[![Open in Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/RiskThinking/cdt-express-notebooks/blob/main/6.company-asset-materiality-risk.ipynb)
+[![Open in SageMaker](https://img.shields.io/badge/Open%20in-SageMaker-orange)](https://studiolab.sagemaker.aws/import/github.com/RiskThinking/cdt-express-notebooks/blob/main/6.company-asset-materiality-risk.ipynb)
+
+Retrieve and compare a company's asset materiality score with climate metric scores. Visualize using histograms to compare distributions across the company and by asset type.
