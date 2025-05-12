@@ -2,6 +2,14 @@
 
 Collection of CDT Express Notebooks
 
+## 0. **Demo of inspecting sdk objects in an IDE**
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RiskThinking/cdt-express-notebooks/blob/main/0.object-exploration-ide-demo.ipynb)
+[![Open in Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/RiskThinking/cdt-express-notebooks/blob/main/0.object-exploration-ide-demo.ipynb)
+[![Open in SageMaker](https://img.shields.io/badge/Open%20in-SageMaker-orange)](https://studiolab.sagemaker.aws/import/github/RiskThinking/cdt-express-notebooks/blob/main/0.object-exploration-ide-demo.ipynb)
+
+Walk through on how to inspect the SDK objects in an IDE. View available methods, their docstrings, and source code.
+
+
 ## 1. **Company Assets Physical Risks**
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RiskThinking/cdt-express-notebooks/blob/main/1.company-assets-physical-risks.ipynb)
 [![Open in Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/RiskThinking/cdt-express-notebooks/blob/main/1.company-assets-physical-risks.ipynb)
@@ -43,10 +51,3 @@ Visualize the change in uninsurable and stranded assets for a company over time 
 [![Open in SageMaker](https://img.shields.io/badge/Open%20in-SageMaker-orange)](https://studiolab.sagemaker.aws/import/github/RiskThinking/cdt-express-notebooks/blob/main/6.company-asset-materiality-risk.ipynb)
 
 Retrieve and compare a company's asset materiality score with climate metric scores. Visualize using histograms to compare distributions across the company and by asset type.
-
-## 0. **Demo of inspecting sdk objects in an IDE**
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RiskThinking/cdt-express-notebooks/blob/main/0.object-exploration-ide-demo.ipynb)
-[![Open in Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/RiskThinking/cdt-express-notebooks/blob/main/0.object-exploration-ide-demo.ipynb)
-[![Open in SageMaker](https://img.shields.io/badge/Open%20in-SageMaker-orange)](https://studiolab.sagemaker.aws/import/github/RiskThinking/cdt-express-notebooks/blob/main/0.object-exploration-ide-demo.ipynb)
-
-Walk through on how to inspect the SDK objects in an IDE. View available methods, their docstrings, and source code.
