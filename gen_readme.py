@@ -56,7 +56,7 @@ def main():
     notebooks = data["notebooks"]
     readme_content = f"# {repo['name']}\n\n{repo['description']}\n\n"
     readme_content += generate_table_format(notebooks)
-    readme_content += f"\n\n{"\n".join(repo['notes'])}"
+    readme_content += "\n\n" + "\n".join(repo["notes"])
 
     with open(script_dir / "README.md", "w") as f:
         f.write(readme_content)

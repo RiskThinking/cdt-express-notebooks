@@ -60,6 +60,13 @@
       "filename": "6.company-asset-materiality-risk.ipynb",
       "description": "Retrieve and compare a company's asset materiality score with climate metric scores. Visualize using histograms to compare distributions across the company and by asset type.",
       "num_api_calls": "1 + 2 × (N / 100)"
+    },
+    {
+      "id": "7",
+      "title": "Company Asset Map",
+      "filename": "7.company-asset-map.ipynb",
+      "description": "Retrieve, view, and visualize a company's assets and their locations.",
+      "num_api_calls": "1 + 2 × (N / 100)"
     }
   ]
 }
