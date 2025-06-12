@@ -31,7 +31,7 @@
       "title": "Company Asset Type Risk Across Years",
       "filename": "2.company-asset-type-risk-across-years.ipynb",
       "description": "Retrieve and visualize a company's climate metric scores for two specific asset types for two horizons. Use histograms to compare the distribution of exposures by asset type and line charts to illustrate how average exposures change over time.",
-      "num_api_calls": "1 + (N / 100)"
+      "num_api_calls": "1 + 2 x (N / 100)"
     },
     {
       "id": "3",
@@ -52,7 +52,7 @@
       "title": "Insurability",
       "filename": "5.insurability.ipynb",
       "description": "Visualize the change in uninsurable and stranded assets for a company over time due to changes in climate risk exposure. Retrieve and display the most at-risk assets that are uninsurable or stranded.",
-      "num_api_calls": "1 + (N_uninsurable / 100) + (N_stranded / 100)"
+      "num_api_calls": "1 + ((N_uninsurable / 100) + (N_stranded / 100)) per 4 horizons"
     },
     {
       "id": "6",
@@ -66,14 +66,14 @@
       "title": "Company Asset Map",
       "filename": "7.company-asset-map.ipynb",
       "description": "Retrieve, view, and visualize a company's assets and their locations.",
-      "num_api_calls": "1 + 2 × (N / 100)"
+      "num_api_calls": "1 + N / 100"
     },
     {
       "id": "8",
       "title": "Company Competitor Comparison",
       "filename": "8.company-competitor-comparison.ipynb",
       "description": "Compare asset-level physical climate risks between a company and its competitor. Visualize geographic asset distributions, identify high-materiality assets, and distribution of climate risk across locations, asset types, and hazard types.",
-      "num_api_calls": "2 x (1 + 3 × (N / 100))"
+      "num_api_calls": "2 + 3 × ((N_company / 100) + (N_competitor / 100))"
     }
   ]
 }
