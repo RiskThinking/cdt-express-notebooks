@@ -30,7 +30,7 @@ def generate_table_format(notebooks: List[dict]):
     for notebook in notebooks:
         title = f"**{notebook['title']}**"
         badges = generate_badge_links(notebook["filename"])
-        table += f"| {notebook['id']} | {title} | {notebook['description']}<br />{badges} | {notebook['num_api_calls']} |\n"
+        table += f"| {notebook['id']} | {title} | {notebook['description']}<br />{badges} | {notebook['api_credits']} |\n"
 
     return table
 

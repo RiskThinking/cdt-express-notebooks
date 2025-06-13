@@ -3,12 +3,11 @@
     "name": "cdt-express-notebooks",
     "description": "Collection of CDT Express Notebooks",
     "notes": [
-      "Some notebooks utilize paginated API endpoints to handle large datasets efficiently. For instance, when retrieving assets associated with a company, the API may return results in pages, each containing up to 100 assets. Therefore, the total number of API calls depends on the total number of assets (N) and the page size.",
-      "Example Calculation:",
-      "For a company with 1,500 assets and a page size of 100:",
-      "* Company Search or Get Call: 1 call",
-      "* Asset Retrieval Calls: (1500 / 100) = 15 calls",
-      "* Total API Calls: 1 + 15 = 16 calls"
+      "Some notebooks utilize paginated API endpoints to handle large datasets efficiently. For instance, when retrieving assets associated with a company, the API may return results in pages, each containing up to 100 assets. The total number of credits consumed depends on the total number of assets (N).",
+      "\nExample Calculation for a company with 1,500 assets:",
+      "* Company Search or Get Call: 1 credit",
+      "* Asset Retrieval Credits: N = 1,500 credits",
+      "* __Total Credits Used__: 1 + 1,500 = 1,501 credits"
     ]
   },
   "notebooks": [
@@ -17,63 +16,63 @@
       "title": "Demo of inspecting sdk objects in an IDE",
       "filename": "0.sdk-object-exploration-ide-demo.ipynb",
       "description": "Walk through on how to inspect the SDK objects in an IDE. View available methods, their docstrings, and source code.",
-      "num_api_calls": "0"
+      "api_credits": 0
     },
     {
       "id": "1",
       "title": "Company Assets Physical Risks",
       "filename": "1.company-assets-physical-risks.ipynb",
       "description": "Analyze a company's global asset exposure to physical climate risks using the VELO SDK, highlighting risk distribution through maps, sorted treemaps of high-risk regions, and comparative bar charts, enabling stakeholders to prioritize mitigation efforts for assets in vulnerable geographies.",
-      "num_api_calls": "2"
+      "api_credits": 2
     },
     {
       "id": "2",
       "title": "Company Asset Type Risk Across Years",
       "filename": "2.company-asset-type-risk-across-years.ipynb",
       "description": "Retrieve and visualize a company's climate metric scores for two specific asset types for two horizons. Use histograms to compare the distribution of exposures by asset type and line charts to illustrate how average exposures change over time.",
-      "num_api_calls": "1 + 2 x (N / 100)"
+      "api_credits": 1177
     },
     {
       "id": "3",
       "title": "Assets Overlaid Map",
       "filename": "3.assets-overlaid-map.ipynb",
       "description": "Retrieve a company's asset-level climate metric scores, plot their locations, and colour code based on which climate risks are present.",
-      "num_api_calls": "1 + 2 × (N / 100)"
+      "api_credits": 573
     },
     {
       "id": "4",
       "title": "Market Benchmark",
       "filename": "4.market-benchmark.ipynb",
       "description": "Compare a company against a market index to benchmark its exposure to climate risk over time. Visualize the most impactful risk factors for each entity to see which risk factors make up that exposure.",
-      "num_api_calls": "6"
+      "api_credits": 6
     },
     {
       "id": "5",
       "title": "Insurability",
       "filename": "5.insurability.ipynb",
       "description": "Visualize the change in uninsurable and stranded assets for a company over time due to changes in climate risk exposure. Retrieve and display the most at-risk assets that are uninsurable or stranded.",
-      "num_api_calls": "1 + ((N_uninsurable / 100) + (N_stranded / 100)) per 4 horizons"
+      "api_credits": 492
     },
     {
       "id": "6",
       "title": "Company Asset Type Materiality vs. Risk",
       "filename": "6.company-asset-materiality-risk.ipynb",
       "description": "Retrieve and compare a company's asset materiality score with climate metric scores. Visualize using histograms to compare distributions across the company and by asset type.",
-      "num_api_calls": "1 + 2 × (N / 100)"
+      "api_credits": 981
     },
     {
       "id": "7",
       "title": "Company Asset Map",
       "filename": "7.company-asset-map.ipynb",
       "description": "Retrieve, view, and visualize a company's assets and their locations.",
-      "num_api_calls": "1 + N / 100"
+      "api_credits": 589
     },
     {
       "id": "8",
       "title": "Company Competitor Comparison",
       "filename": "8.company-competitor-comparison.ipynb",
       "description": "Compare asset-level physical climate risks between a company and its competitor. Visualize geographic asset distributions, identify high-materiality assets, and distribution of climate risk across locations, asset types, and hazard types.",
-      "num_api_calls": "2 + 3 × ((N_company / 100) + (N_competitor / 100))"
+      "api_credits": 983
     }
   ]
 }
