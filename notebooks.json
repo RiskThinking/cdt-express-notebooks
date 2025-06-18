@@ -6,8 +6,13 @@
       "Some notebooks utilize paginated API endpoints to handle large datasets efficiently. For instance, when retrieving assets associated with a company, the API may return results in pages, each containing up to 100 assets. The total number of credits consumed depends on the total number of assets (N).",
       "\nExample Calculation for a company with 1,500 assets:",
       "* Company Search or Get Call: 1 credit",
-      "* Asset Retrieval Credits: N = 1,500 credits",
-      "* __Total Credits Used__: 1 + 1,500 = 1,501 credits"
+      "* Asset Retrieval Credits: 1,500 credits",
+      "* __Total Credits Used__: 1 + 1,500 = 1,501 credits",
+      "\nIn addition, when performing aggregations, the number of credits consumed will depend on the number of unique groups returned. For example, if you aggregate assets climate scores by country, the number of credits consumed will equal the number of countries returned.",
+      "\nExample Calculation for aggregation by country with 10 unique countries:",
+      "* Company Search or Get Call: 1 credit",
+      "* Country Aggregation Credits: 10 credits",
+      "* __Total Credits Used__: 1 + 10 = 11 credits"
     ]
   },
   "notebooks": [
@@ -23,7 +28,7 @@
       "title": "Company Assets Physical Risks",
       "filename": "1.company-assets-physical-risks.ipynb",
       "description": "Analyze a company's global asset exposure to physical climate risks using the VELO SDK, highlighting risk distribution through maps, sorted treemaps of high-risk regions, and comparative bar charts, enabling stakeholders to prioritize mitigation efforts for assets in vulnerable geographies.",
-      "api_credits": 2
+      "api_credits": 26
     },
     {
       "id": "2",
@@ -44,7 +49,7 @@
       "title": "Market Benchmark",
       "filename": "4.market-benchmark.ipynb",
       "description": "Compare a company against a market index to benchmark its exposure to climate risk over time. Visualize the most impactful risk factors for each entity to see which risk factors make up that exposure.",
-      "api_credits": 6
+      "api_credits": 8067
     },
     {
       "id": "5",
